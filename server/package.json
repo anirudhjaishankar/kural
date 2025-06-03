@@ -1,0 +1,25 @@
+{
+  "name": "kural-server",
+  "private": true,
+  "version": "0.0.1",
+  "dependencies": {
+    "@ericedouard/fastify-socket.io": "^5.1.2",
+    "@types/socket.io": "^3.0.1",
+    "fastify": "^5.3.3",
+    "socket.io": "^4.8.1"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^4.0.9",
+    "utf-8-validate": "^6.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  }
+}
